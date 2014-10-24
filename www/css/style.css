@@ -1,0 +1,133 @@
+/*Подключение шрифтов*/
+@font-face {
+    font-family: "Pt Sans";
+    font-weight: normal;
+    font-style: normal;
+
+    src: url("fonts/PT Sans/pt_sans.eot");
+    src: url("fonts/PT Sans/pt_sans.eot?#iefix") format("embedded-opentype"),
+    url("fonts/PT Sans/pt_sans.woff2") format("woff2"),
+    url("fonts/PT Sans/pt_sans.woff") format("woff"),
+    url("fonts/PT Sans/pt_sans.ttf") format("truetype"),
+    url("fonts/PT Sans/pt_sans.svg#Pt Sans") format("svg");
+}
+
+body {
+    width: 1000px;
+    height: 1794px;
+    margin: 0 auto;
+
+    color: white;
+    color: white;
+    background-image: url("../images/bk_top.png"), url("../images/bk_bottom.png"),-webkit-linear-gradient(top,rgb(228,242,255),white);
+    background-image: url("../images/bk_top.png"), url("../images/bk_bottom.png"),-moz-linear-gradient(to bottom,rgb(228,242,255),white);
+    background-image: url("../images/bk_top.png"), url("../images/bk_bottom.png"), -ms-linear-gradient(top,rgb(228,242,255),white);
+    background-image: url("../images/bk_top.png"), url("../images/bk_bottom.png"), -o-linear-gradient(top,rgb(228,242,255),white);
+    background-image: url("../images/bk_top.png"), url("../images/bk_bottom.png"),linear-gradient(top,rgb(228,242,255),white);
+    background-repeat: no-repeat;
+    background-position: 50% 0, 50% 100%, 0 0;
+    background-size: 1920px 472px,1920px 192px, 100% 100%;
+
+    font-family: Arial;
+    font-size: 16px;
+}
+
+
+
+.content {
+    position: relative;
+    margin-top: 8px;
+    margin-left: 19px;
+    color: rgb(0,0,0);
+    
+    font-family: "Pt Sans";
+}
+
+
+
+
+
+
+
+
+
+
+
+.btn {
+    position: relative;
+    display: block;
+    width: 125px;
+    margin-bottom: 12px;
+    padding: 14px 10px 15px 60px;
+    color: white;
+    background-image: url("../images/bk_btn.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-weight: bold;
+    letter-spacing: -1.25px;
+}
+.btn:before {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    content: "";
+}
+.btn-save:before {
+    background-image: url("../images/save_btn.png");
+}
+.btn-send:before {
+    background-image: url("../images/send_btn.png");
+}
+
+.modal{
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    display: none;
+    width: 540px;
+    margin: -100px 0 0 -150px;
+    padding: 30px;
+    color: black;
+    border-radius: 5px;
+    background: #ffffff;
+    -webkit-box-shadow: 0 0 125px 0 rgba(0,0,0,1),
+    0 0 10000px 500px rgba(0,0,0,.75);
+    box-shadow: 0 0 125px 0 rgba(0,0,0,1),
+    0 0 10000px 500px rgba(0,0,0,.75);
+    text-align: center;
+}
+.btn-close{
+    ;
+    color: #aaa;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute; right: 5px; top: 0;
+}
+.btn-close:hover{
+    cursor: pointer;
+}
+
+#modalRegistry:target{
+    display: block;
+  
+}
+#modalLogin:target{
+    display: block;
+  
+}
+#modal dd {
+    margin-left: 90px;
+}
+#modal dd textarea {
+    width: 171px;
+    height: 100px;
+}
+#modal textarea #placeholder {
+    visibility: visible;
+}
+
